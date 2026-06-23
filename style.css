@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&family=Parisienne&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f3ef;
+    color: #4d3c39;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4d3c39;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #c78b78;
+}
+
+.connect-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #c78b78;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s ease;
+}
+
+.connect-btn:hover {
+    background-color: #b47463;
+}
+
+/* ---------- HOME PAGE ---------- */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 80px;
+    min-height: 80vh;
+}
+
+.left {
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 65px;
+    line-height: .95;
+    color: #c78b78;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 140px;
+    height: 2px;
+    background: #c78b78;
+    margin: 30px 0;
+}
+
+.tagline {
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.left h2 {
+    font-family: 'Parisienne', cursive;
+    font-size: 40px;
+    color: #c78b78;
+    margin-top: 40px;
+}
+
+.left span {
+    display: block;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #c78b78;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 40px;
+    background: #c78b78;
+    color: white;
+    text-decoration: none;
+}
+
+.secondary-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 1px solid #c78b78;
+    color: #c78b78;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.right {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #edd9d1;
+    border-radius: 50%;
+    right: -20px;
+    top: 40px;
+    z-index: -1;
+}
+
+.right img {
+    width: 380px;
+    border-radius: 25px;
+}
+
+/* ---------- INTERIOR PAGES ---------- */
+
+.page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px;
+}
+
+/* ---------- ABOUT ---------- */
+
+.about-page {
+    max-width: 1400px;
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.about-image {
+    position: relative;
+    width: 450px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 35px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.pink-box {
+    position: absolute;
+    width: 350px;
+    height: 500px;
+    background: #efd7d1;
+    left: -30px;
+    bottom: -30px;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.outline-box {
+    position: absolute;
+    width: 420px;
+    height: 650px;
+    border: 2px solid #d8a79d;
+    left: -20px;
+    top: 40px;
+    border-radius: 30px;
+    z-index: 2;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 85px;
+    font-weight: 500;
+    color: #2d1c19;
+    margin-bottom: 10px;
+}
+
+.about-content h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #c78b78;
+    font-size: 95px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.title-line {
+    width: 100%;
+    height: 1px;
+    background: #d8b1a7;
+    margin-bottom: 35px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-content strong {
+    color: #c78b78;
+}
+
+.about-content h3 {
+    margin-top: 50px;
+    color: #c78b78;
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.education-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.education-section h3 {
+    font-family: 'Parisienne', cursive;
+    font-size: 72px;
+    color: #d4a193;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.education {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-top: 1px solid #d4a193;
+    padding-top: 30px;
+}
+
+.school {
+    flex: 1;
+}
+
+.school-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #f7e7e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4a193;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.school {
+    flex: 1;
+}
+
+.school h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.school p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.school span {
+    font-style: italic;
+}
+
+/* ---------- RESEARCH ---------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    color: #c78b78;
+    margin-bottom: 15px;
+}/* CONTACT PAGE */
+
+.contact-page {
+    max-width: 1300px;
+    margin: auto;
+    padding: 80px;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact-left {
+    flex: 1;
+}
+
+.contact-left h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    color: #2d1c19;
+}
+
+.contact-left h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #c78b78;
+    font-size: 95px;
+    font-weight: normal;
+}
+
+.contact-left p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    margin-top: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.contact-card h3 {
+    color: #c78b78;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.contact-card p {
+    margin-bottom: 10px;
+}
+
+.contact-right {
+    flex: 1;
+}
+
+.contact-box {
+    background: #efd7d1;
+    padding: 60px;
+    border-radius: 35px;
+}
+
+.contact-box h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #7d5c53;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 22px;
+    line-height: 1.8;
+}.contact-card a {
+    text-decoration: none;
+    color: #c78b78;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    color: #8b5e52;
+}/* PORTFOLIO PAGE */
+
+.portfolio-page {
+    max-width: 1300px;
+    margin: auto;
+    padding: 80px;
+}
+
+.portfolio-page h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    color: #2d1c19;
+}
+
+.portfolio-page h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #c78b78;
+    font-size: 95px;
+    font-weight: normal;
+}
+
+.portfolio-intro {
+    font-size: 22px;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.portfolio-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.portfolio-card h3 {
+    color: #c78b78;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.portfolio-card p {
+    line-height: 1.7;
+}
+
+.portfolio-card a {
+    color: #c78b78;
+    text-decoration: none;
+    font-weight: 500;
+}/* RESEARCH PAGE */
+
+.research-page {
+    max-width: 1300px;
+    margin: auto;
+    padding: 80px;
+}
+
+.research-page h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 80px;
+    color: #2d1c19;
+}
+
+.research-page h1 span {
+    font-family: 'Great Vibes', cursive;
+    color: #c78b78;
+    font-size: 95px;
+    font-weight: normal;
+}
+
+.research-intro {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 50px;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.research-card {
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.research-card h3 {
+    color: #c78b78;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.research-card p {
+    line-height: 1.7;
+}
+/* ---------- MOBILE RESPONSIVE ---------- */
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 40px 20px;
+        min-height: auto;
+        gap: 30px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 55px;
+        line-height: 1;
+    }
+
+    .tagline {
+        font-size: 20px;
+    }
+
+    .left h2 {
+        font-size: 36px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .right img {
+        width: 300px;
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .about-page {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
+
+    .pink-box,
+    .outline-box {
+        display: none;
+    }
+
+    .about-content h1 {
+        font-size: 55px;
+    }
+
+    .about-content h1 span {
+        font-size: 60px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    .education {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    border-top: 1px solid #d9b3aa;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+.school {
+    flex: 1;
+}
+
+.school h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #3d2a28;
+}
+
+.school p {
+    margin-bottom: 10px;
+}
+
+.school-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f4dfd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c98f81;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+    .research-page,
+    .portfolio-page,
+    .contact-page {
+        padding: 40px 20px;
+    }
+
+    .research-page h1,
+    .portfolio-page h1,
+    .contact-left h1 {
+        font-size: 55px;
+    }
+
+    .research-page h1 span,
+    .portfolio-page h1 span,
+    .contact-left h1 span {
+        font-size: 65px;
+    }
+
+    .research-grid,
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .contact-box {
+        padding: 35px;
+    }
+
+    .contact-box h2 {
+        font-size: 45px;
+    }
+}.project-image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-image-card h3 {
+    margin-top: 10px;
+}
+
+.project-image-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-image-card a:hover {
+    color: white;
+}.portfolio-card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.portfolio-card a:hover {
+    color: white;
+}.project-image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.project-image-card:hover img {
+    transform: scale(1.03);
+}
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    color: #c78b78;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #2d1c19;
+    display: flex;
+    align-items: center;
+}
+
+.logo a:hover {
+    color: #c78b78;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
