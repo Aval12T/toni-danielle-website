@@ -742,11 +742,10 @@ h1 {
     width: auto;
     display: block;
 }
-.about-content a {
+.about-content a,
+.about-content a:visited,
+.about-content a:hover,
+.about-content a:active {
     color: inherit;
     text-decoration: none;
-}
-
-.about-content a:hover {
-    text-decoration: underline;
 }
